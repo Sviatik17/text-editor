@@ -18,10 +18,17 @@
 
         </div>
         <div class="settings">
-            <input type="number" value="16" class="fontSizeChanger" id="fontSizeChanger">
+            <input type="number" value="16" min="0" class="fontSizeChanger" id="fontSizeChanger">
             <div class="weightChanger" id="weightChanger">B</div>
-            <div class="cursyvChanger" id="cursyvChanger">I</div>
-        </div>
+            <div class="cursyvChanger" id="cursyvChanger"> <i class="fa-solid fa-italic"></i></div>
+            <div class="underlineChanger" id="underlineChanger">  <i class="fa-solid fa-underline"></i></div>
+            <div class="crossedChanger" id="crossedChanger">    <i class="fa-solid fa-strikethrough"></i></div>
+            <div class="fontColorChanger" id="fontColorChangerdiv">
+                <i class="fa-solid fa-font"></i>
+                <div class="container">
+                    <input type="color" id="colorChanger">
+                </div>
+            </div>
     </div>
     <script src="./main.js"></script>
 </body>
