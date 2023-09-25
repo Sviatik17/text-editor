@@ -127,3 +127,6 @@ $('#colorChanger').change(function(){
     // $('#page').css('color',`${colorChanger.val}`)
     console.log(`${$('#colorChanger.val()')}`)
 })
+
+// $('.container').hide(0);
+// $('.container').show(1000);
