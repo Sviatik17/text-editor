@@ -130,3 +130,6 @@ $('#colorChanger').change(function(){
 
 // $('.container').hide(0);
 // $('.container').show(1000);
+$('#input').click(function(){
+    $('#colorChanger').click()
+})

@@ -84,6 +84,13 @@
    
 }
 
+.container .row #input{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(./img/color.png);
+    background-size: cover;
+}
 .container .row .circle{
     width: 50px;
     height: 50px;
@@ -94,7 +101,9 @@
 .container .row input{
     width: 50px;
     height: 50px;
-    border-radius: 50%;
+    display: none;
+    
+
     
 }
 .fontColor{
