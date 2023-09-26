@@ -68,17 +68,17 @@
     background-color: #fff;
     position: relative;
     bottom: 270px;
-    left: 1000px;
+    left: 900px;
     box-shadow:  0px 0px 15px 3px #555;
     border-radius: 20px;
-    /* display: none; */
+    display: none;
 
 }
 
 .container .row{
     width: 300px;
     height: 50px;
-    display: flex;
+    display: inline-flex;
     justify-content: space-evenly;
     align-items: center;
    
@@ -95,17 +95,44 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 1px solid #000;
-    background-color: red;
+    border: none;
+ 
 }
 .container .row input{
     width: 50px;
     height: 50px;
-    display: none;
-    
+    display: none;    
 
     
 }
 .fontColor{
     position: fixed;
+}
+#pink{
+    background-color: pink;
+}
+#orange{
+    background-color: orange;
+}
+#brown{
+    background-color: brown;
+}
+#black{
+    background-color: black;
+}
+#purple{
+    background-color: purple;
+}
+#green{
+    background-color: green;
+}
+#blue{
+    background-color: blue;
+}
+#white{
+    background-color: white;
+    border: 1px solid #000;
+}
+#red{
+    background-color: red;
 }

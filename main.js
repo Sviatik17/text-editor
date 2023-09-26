@@ -3,7 +3,8 @@ let pageStyle={
     weight:false,
     italic:false,
     underline:false,
-    crossed:false
+    crossed:false,
+    fontColor:false
 }
 
 
@@ -123,13 +124,49 @@ $('#crossedChanger').click(function(){
     }
 })
 
-$('#colorChanger').change(function(){
-    // $('#page').css('color',`${colorChanger.val}`)
-    console.log(`${$('#colorChanger.val()')}`)
+
+$('#input').click(function(){
+        $('#colorChanger').click()
+   
 })
 
-// $('.container').hide(0);
-// $('.container').show(1000);
-$('#input').click(function(){
-    $('#colorChanger').click()
+$('#fontColorChanger').click(function(){
+    if(pageStyle.fontColor==false){
+        $('.container').css('display','flex');
+        pageStyle.fontColor=true;
+    } else {
+        $('.container').css('display','none');
+        pageStyle.fontColor=false;
+    }
+    
+})
+$('#colorChanger').on('input',function(){
+    $('.page').css('color',`${colorChanger.value}`)
+})
+$('#pink').click(function(){
+    $('.page').css('color',`pink`)
+})
+$('#orange').click(function(){
+    $('.page').css('color',`orange`)
+})
+$('#brown').click(function(){
+    $('.page').css('color',`brown`)
+})
+$('#black').click(function(){
+    $('.page').css('color',`black`)
+})
+$('#purple').click(function(){
+    $('.page').css('color',`purple`)
+})
+$('#green').click(function(){
+    $('.page').css('color',`green`)
+})
+$('#blue').click(function(){
+    $('.page').css('color',`blue`)
+})
+$('#white').click(function(){
+    $('.page').css('color',`white`)
+})
+$('#red').click(function(){
+    $('.page').css('color',`red`)
 })
