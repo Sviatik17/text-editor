@@ -142,31 +142,58 @@ $('#fontColorChanger').click(function(){
 })
 $('#colorChanger').on('input',function(){
     $('.page').css('color',`${colorChanger.value}`)
+    $('#fontColorChanger').css('color',`${colorChanger.value}`)
 })
 $('#pink').click(function(){
     $('.page').css('color',`pink`)
+    $('.container').css('display','none');
+    pageStyle.fontColor=false;
 })
 $('#orange').click(function(){
     $('.page').css('color',`orange`)
+    $('.container').css('display','none');
+    pageStyle.fontColor=false;
 })
 $('#brown').click(function(){
     $('.page').css('color',`brown`)
+    $('.container').css('display','none');
+    pageStyle.fontColor=false;
 })
 $('#black').click(function(){
     $('.page').css('color',`black`)
+    $('.container').css('display','none');
+    pageStyle.fontColor=false;
 })
 $('#purple').click(function(){
     $('.page').css('color',`purple`)
+    $('.container').css('display','none');
+    pageStyle.fontColor=false;
 })
 $('#green').click(function(){
     $('.page').css('color',`green`)
+    $('.container').css('display','none');
+    pageStyle.fontColor=false;
 })
 $('#blue').click(function(){
     $('.page').css('color',`blue`)
+    $('.container').css('display','none');
+    pageStyle.fontColor=false;
 })
 $('#white').click(function(){
     $('.page').css('color',`white`)
+    $('.container').css('display','none');
+    pageStyle.fontColor=false;
 })
 $('#red').click(function(){
     $('.page').css('color',`red`)
+    $('.container').css('display','none');
+    pageStyle.fontColor=false;
+})
+$('.backgroundCircle').click(function(){
+    $('.backgroundColorInput').click()
+})
+$('.backgroundColorInput').on('input',function(){
+    $('.wrap').css('background-color',`${backgroundColorInput.value}`)
+    $('.backgroundCircle').css('background-color',`${backgroundColorInput.value}`)
+    $('.settings').css('background-color',`#fff`)
 })
